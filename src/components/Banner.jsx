@@ -1,6 +1,6 @@
 import React from 'react';
 //images
-import Image from '../assets/mandala.png'
+import Image from '../assets/foto_cv.jpeg'
 //icons
 import {FaGithub, FaYoutube, FaDribbble} from 'react-icons/fa'
 //type animation
@@ -32,9 +32,9 @@ const Banner = () => {
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
               className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-4'>Soy un/ I am a</span>
+              <span className='text-white mr-4'> </span>
               <TypeAnimation sequence={[
-                'Desarrollador/Developer',
+              'Desarrollador/Developer',
                 2000,
                 'Diseñador/Designer',
                 2000,              
@@ -51,7 +51,10 @@ const Banner = () => {
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                 asdasdasdasdasd
+                 Tecnico Programador <br />
+                 Tecnico Desarrollador Web <br />                 
+                 Tecnico Administrador de Sistemas
+                             
               </motion.p>
               <motion.div 
               variants={fadeIn('up', 0.3)} 
@@ -89,7 +92,7 @@ const Banner = () => {
             variants={fadeIn('down', 0.3)} 
             initial="hidden" 
             whileInView={'show'} 
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+            className='hidden lg:flex flex-1 max-w-[300px] lg:max-w-[369px] '>
               <img src={Image} alt='' />
             </motion.div>
         </div>
