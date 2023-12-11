@@ -43,7 +43,12 @@ const Services = () => {
             <button className='btn btn-sm'>See my work</button>
           </motion.div>
           {/* servives */}
-          <div className='flex-1'>
+          <motion.div 
+          variants={fadeIn('left', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false, amount: 0.3}}
+          className='flex-1'>
             {/* servives list */}
             <div>
               {services.map((service, index)=> {
@@ -74,7 +79,7 @@ const Services = () => {
                 )
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       </section>

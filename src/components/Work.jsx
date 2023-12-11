@@ -24,10 +24,10 @@ const Work = () => {
               My Latest  <br />
             Work.
             </h2>
-            <p className='max-w-sm mb-16'>
+            <p className='max-w-sm -mt-6'>
               orem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, officiis amet. Eligendi quidem temporibus ex, expedita labore esse ullam quis quisquam, porro doloribus unde corrupti placeat explicabo voluptates quibusdam nihil!
             </p>
-            <button className='btn btn-sm'>View all projects</button>
+            <button className='btn btn-sm mt-6'>View all projects</button>
           </div>
           {/* image */}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl '>
@@ -57,7 +57,7 @@ const Work = () => {
         viewport={{once: false, amount: 0.3}}
         className='flex-1 flex flex-col gap-y-10'>
            {/* image */}
-           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl '>
+           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
              {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all
             duration-300'></div>
@@ -77,8 +77,8 @@ const Work = () => {
                 </div>
           </div>
 
-               {/* image */}
-               <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl '>
+           {/* image */}
+           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
              {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all
             duration-300'></div>
