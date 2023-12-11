@@ -16,14 +16,28 @@ const About = () => {
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
-        <div>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20
+        lg:gap-y-0 h-screen'>
           {/* img */}
-          <div className='flex-1 bg-mandala bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'></div>
+          <motion.div 
+          variants={fadeIn('right', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false, amount: 0.3}}
+          className='flex-1 bg-mandala bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+
+          </motion.div>
           {/* text */}
-          <div>
-            <h2>About me.</h2>
-            <h3>I'm a Freelance </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, consectetur. Aperiam maiores aliquid quis vel veritatis ipsa, cumque, impedit magnam amet ea iste architecto accusamus.
+          <motion.div 
+           variants={fadeIn('left', 0.3)}
+           initial='hidden'
+           whileInView={'show'}
+           viewport={{once: false, amount: 0.3}}
+          className='flex-1'>
+            <h2 className='h2 text-accent'>About me.</h2>
+            <h3 className='h3 mb-4'>I'm a Freelance </h3>
+          <p className='mb-6'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, consectetur. Aperiam maiores aliquid quis vel veritatis ipsa, cumque, impedit magnam amet ea iste architecto accusamus.
              Totam eligendi veritatis ad magni.</p>
              {/* stats */}
              <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -52,7 +66,7 @@ const About = () => {
                   My Portfolio
                 </a>
               </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
