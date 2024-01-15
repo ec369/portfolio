@@ -28,6 +28,7 @@ module.exports = {
         services: "url('./assets/services.png')",
         mandala: "url('./assets/mandala.png')",
         cv: "url('./assets/foto_cv.jpeg')",
+       
       },
     },
   },

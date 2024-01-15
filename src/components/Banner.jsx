@@ -31,12 +31,12 @@ const Banner = () => {
               initial="hidden" 
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
-              className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+              className='mb-3 text-[36px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'> </span>
               <TypeAnimation sequence={[
-              'Desarrollador/Developer',
+              'Full stack Developer',
                 2000,
-                'Diseñador/Designer',
+              'Designer',
                 2000,              
               ]}
               speed={50}
@@ -51,10 +51,7 @@ const Banner = () => {
               whileInView={'show'} 
               viewport={{once: false, amount: 0.7 }} 
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                 Tecnico Programador <br />
-                 Tecnico Desarrollador Web <br />                 
-                 Tecnico Administrador de Sistemas
-                             
+        
               </motion.p>
               <motion.div 
               variants={fadeIn('up', 0.3)} 

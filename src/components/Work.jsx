@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
 //img
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
+import Img1 from '../assets/portfolio-magos3d.png'
+import Img2 from '../assets/portfolio-fullstore.png'
 import Img3 from '../assets/portfolio-img3.png'
 const Work = () => {
   return (

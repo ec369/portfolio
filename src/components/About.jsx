@@ -35,28 +35,72 @@ const About = () => {
            viewport={{once: false, amount: 0.3}}
           className='flex-1'>
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'm a Freelance </h3>
+            <h3 className='h3 mb-4'>I'm a Freelance full stack developer </h3>
           <p className='mb-6'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, consectetur. Aperiam maiores aliquid quis vel veritatis ipsa, cumque, impedit magnam amet ea iste architecto accusamus.
-             Totam eligendi veritatis ad magni.</p>
+          I consider myself a professional full stack developer highly adaptable to new technologies. In addition to my technical skills, I can solve problems and make efficient decisions. I enjoy teamwork, and my passion for continuous learning drives me to stay updated in the field, allowing me to stay abreast of the latest trends and advances in my area.</p>
              {/* stats */}
-             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+             <div className='grid grid-cols-5 lg:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-6 mb-12'>
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                     { inView ? <CountUp start={0} end={13} duration={3}/> : null} 
+                     { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Year of <br />
-                        Exprience
+                        Experience <br />
+                       React
                         </div>
                 </div>
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                     { inView ? <CountUp start={0} end={13} duration={3}/> : null} 
+                     { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Year of <br />
-                        Exprience
+                        Experience Laravel   <br />
+                  
+                        </div>
+                </div>
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Experience Mysql   <br />
+                 
+                        </div>
+                </div>
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Experience PHP   <br />
+                 
+                        </div>  
+                </div>
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Experience Visual Studio   <br />
+                 
+                        </div>
+                </div>
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={2} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Experience Blender   <br />
+                 
+                        </div>
+                </div>
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Experience MongoDB   <br />
+                 
                         </div>
                 </div>
              </div>
