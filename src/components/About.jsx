@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 //variant
 import { fadeIn } from '../variants'; 
+import { FaBlender, FaBootstrap, FaCss3, FaDatabase, FaLaravel, FaMicrosoft, FaPhp, FaReact } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 
 const About = () => {
@@ -43,18 +45,29 @@ const About = () => {
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
-                    </div>
-                        <div className='font-primary text-sm tracking-[2px]'>
-                        Experience <br />
-                       React
+                    </div> 
+                        <div className='font-primary text-sm tracking-[2px] '>
+                       Years Experience <br />
+                       React  <FaReact className='text-[30px]'></FaReact>
                         </div>
                 </div>
+
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
+                    </div> 
+                        <div className='font-primary text-sm tracking-[2px] '>
+                        Years Experience <br />
+                       TailwindCSS  <FaReact className='text-[30px]'></FaReact>
+                        </div>
+                </div>
+
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience Laravel   <br />
+                        Years Experience <br /> Laravel   <br /> <FaLaravel className='text-[30px]'></FaLaravel>
                   
                         </div>
                 </div>
@@ -63,7 +76,7 @@ const About = () => {
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience Mysql   <br />
+                        Years Experience <br />  Phpmyadmin   <br /> <FaDatabase className='text-[30px]'></FaDatabase>
                  
                         </div>
                 </div>
@@ -72,7 +85,7 @@ const About = () => {
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience PHP   <br />
+                        Years Experience <br />    PHP   <br /><FaPhp className='text-[30px]'></FaPhp>
                  
                         </div>  
                 </div>
@@ -81,7 +94,7 @@ const About = () => {
                      { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience Visual Studio   <br />
+                        Years Experience <br />    Microsoft Visual Studio   <br /> <FaMicrosoft className='text-[30px]'></FaMicrosoft>
                  
                         </div>
                 </div>
@@ -90,25 +103,29 @@ const About = () => {
                      { inView ? <CountUp start={0} end={2} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience Blender   <br />
+                        Years Experience <br /> Blender   <br /> <FaBlender className='text-[30px]'></FaBlender>
                  
-                        </div>
+                        </div> 
                 </div>
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
                      { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Experience MongoDB   <br />
+                        Years Experience <br /> MongoDB   <br /> <FaDatabase className='text-[30px]'></FaDatabase>
                  
                         </div>
                 </div>
              </div>
               <div className='flex gap-x-8 items-center'>
-                <button className='btn btn-lg'>Contact me</button>
-                <a href="#" className='text-gradient btn-link'>
-                  My Portfolio
-                </a>
+              <Link to='contact' activeClass='active' smooth={true} spy={true} 
+              className=' btn btn-lg cursor-pointer h-[60px] flex items-center justify-center'>
+                Contact me
+                      </Link>
+                      <Link to='contact' activeClass='active' smooth={true} spy={true} 
+                          className=' text-gradient btn-link cursor-pointer h-[60px] flex items-center justify-center'>
+                      My Portfolio
+                    </Link>
               </div>
           </motion.div>
         </div>
