@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 //variant
 import { fadeIn } from '../variants'; 
-import { FaBlender, FaBootstrap, FaCss3, FaDatabase, FaLaravel, FaMicrosoft, FaPhp, FaReact } from 'react-icons/fa';
+import { FaBlender, FaBootstrap, FaCss3, FaDatabase, FaGit, FaGithub, FaLaravel, FaMicrosoft, FaPhp, FaReact } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 
@@ -26,7 +26,7 @@ const About = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 bg-mandala bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+          className='flex-1 bg-mandala bg-contain bg-no-repeat h-[640px]   mix-blend-lighten bg-top'>
 
           </motion.div>
           {/* text */}
@@ -41,7 +41,7 @@ const About = () => {
           <p className='mb-6'>
           I consider myself a professional full stack developer highly adaptable to new technologies. In addition to my technical skills, I can solve problems and make efficient decisions. I enjoy teamwork, and my passion for continuous learning drives me to stay updated in the field, allowing me to stay abreast of the latest trends and advances in my area.</p>
              {/* stats */}
-             <div className='grid grid-cols-5 lg:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-6 mb-12'>
+             <div className='grid grid-cols-5  lg:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-6 mb-12 ssm:grid-cols-3'>
                 <div>
                     <div className='text-[40px] font-tertiary text-gradient mb-2'>
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
@@ -85,7 +85,7 @@ const About = () => {
                      { inView ? <CountUp start={0} end={3} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Years Experience <br />    PHP   <br /><FaPhp className='text-[30px]'></FaPhp>
+                        Years Experience <br />       <br /><FaPhp className='text-[60px] -mt-6'></FaPhp>
                  
                         </div>  
                 </div>
@@ -94,7 +94,7 @@ const About = () => {
                      { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Years Experience <br />    Microsoft Visual Studio   <br /> <FaMicrosoft className='text-[30px]'></FaMicrosoft>
+                        Year Experience <br />    Microsoft Visual Studio   <br /> <FaMicrosoft className='text-[30px]'></FaMicrosoft>
                  
                         </div>
                 </div>
@@ -112,7 +112,27 @@ const About = () => {
                      { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
                     </div>
                         <div className='font-primary text-sm tracking-[2px]'>
-                        Years Experience <br /> MongoDB   <br /> <FaDatabase className='text-[30px]'></FaDatabase>
+                        Year Experience <br /> MongoDB   <br /> <FaDatabase className='text-[30px]'></FaDatabase>
+                 
+                        </div>
+                </div>
+
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Year Experience <br />    <br /> <FaGit className='text-[30px] -mt-6'></FaGit>
+                 
+                        </div>
+                </div>
+
+                <div>
+                    <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                     { inView ? <CountUp start={0} end={1} duration={3}/> : null} 
+                    </div>
+                        <div className='font-primary text-sm tracking-[2px]'>
+                        Year Experience <br />    <br /> <FaGithub className='text-[30px] -mt-6'></FaGithub>
                  
                         </div>
                 </div>

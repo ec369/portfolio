@@ -19,7 +19,7 @@ const Work = () => {
         viewport={{once: false, amount: 0.3}}
         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           {/* text */}
-          <div>
+          <div className='ssm:mt-24 lg:mt-0'>
             <h2 className='h2 leading-tight text-accent '>
               My Latest  <br />
             Work.
@@ -99,7 +99,7 @@ const Work = () => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14
               transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Full Store Gaming <br />WordPress-WooCommerce</span>
+                <span className='text-3xl text-white'>Servicios Confluencia<br />React-Laravel-TailwindCSS</span>
               
                 </div>
           </div></a>

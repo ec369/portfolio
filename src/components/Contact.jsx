@@ -3,6 +3,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
+
+import CheckoutForm from '../components/checkoutform/CheckoutForm';
+
+
 const Contact = () => {
   return (
     <section className='py-16 lg:section' id='contact'>
@@ -24,26 +28,15 @@ const Contact = () => {
           </div>
         </motion.div>
           {/* form */}
-          <motion.form 
+          <motion.div
           variants={fadeIn('left', 0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{once: false, amount: 0.3}}
-          className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-            <input className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all' type="text"
-            placeholder='Your name' />
-              <input className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all' type="text"
-            placeholder='Your email' />
-            <textarea className='bg-transparent border-b py-3 outline-none w-full
-            placeholder:text-white focus:border-accent transition-all 
-            resize-none mb-12' 
-            placeholder='Your message'>
-
-            </textarea>
-            <button className='btn btn-lg'>Send message</button>
-          </motion.form>
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6"
+        >
+          <CheckoutForm></CheckoutForm>
+        </motion.div>
       </div>
     </div>
     </section>
