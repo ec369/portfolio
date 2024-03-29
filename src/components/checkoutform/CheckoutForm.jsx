@@ -108,7 +108,7 @@ return (
           disabled={!capVal}  va en button atras de clasname
         </ReCAPTCHA> */}
         
-      <button  className="flex flex-col mx-auto gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-12 py-2.5 text-center  mb-2 btn btn-lg " type="submit">Enviar</button>
+      <button  className="flex flex-col mx-auto gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-12 py-2.5 text-center  mb-2 btn btn-lg " type="submit">Send</button>
 {/* btn btn-lg   //estilo anterior */}
     </form>
           )}
